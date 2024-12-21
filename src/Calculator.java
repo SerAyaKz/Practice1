@@ -26,18 +26,20 @@ public class Calculator {
         this.num2 = num2;
     }
 
-    public int add(int num1, int num2) {
+    public int add() {
         return num1 + num2;
     }
-    public int subtract(int num1, int num2) {
+    public int subtract() {
         return num1 - num2;
     }
-    public int multiply(int num1, int num2) {
+    public int multiply() {
         return num1 * num2;
     }
-    public double divide(int num1, int num2) {
+    //it just divides
+    public double divide() {
         if (num2 == 0) {
-            throw new ArithmeticException("Can't divide by zero!!!");
+            System.out.println("Cant divide by zero");
+//            throw new ArithmeticException("Can't divide by zero!!!");
         }
         return (double) num1 / num2;
     }
